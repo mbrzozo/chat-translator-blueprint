@@ -4,7 +4,6 @@ const express = require('express');
 const { Translate } = require('@aws-sdk/client-translate');
 require('dotenv').config();
 const cors = require('cors');
-import('sample.env')
 
 // Configure the AWS Translate client
 const translateService = new Translate({ 
@@ -13,7 +12,7 @@ const translateService = new Translate({
         accessKeyId: process.env.AWS_ACCESS_KEY_ID,
         secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
     }
-});console.log(AWS_REGION);
+});console.log(process.env.AWS_REGION);
 const app = express();
 
 // Local ssl certificates
