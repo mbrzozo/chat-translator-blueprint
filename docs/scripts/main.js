@@ -76,7 +76,7 @@ function sendChat(){
 
     // Default language to english if no source_language available    
     if(translationData === null) {
-        sourceLang = 'en';
+        sourceLang = 'pl';
     } else {
         sourceLang = translationData.source_language;
     }

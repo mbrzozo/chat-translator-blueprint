@@ -2,3 +2,4 @@ node_modules/*
 docs/scripts/config.js
 .env
 sample.env
+temp.txt
